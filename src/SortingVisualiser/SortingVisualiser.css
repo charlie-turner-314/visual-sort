@@ -1,0 +1,20 @@
+.array-container {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+
+.array-bar {
+  width: 50px;
+  display: inline-block;
+  background-color: pink;
+  margin: 0 1px;
+}
+
+.array-bar > .valueSpan {
+  position: absolute;
+  width: 55px;
+  transform: translateX(-50%);
+}
