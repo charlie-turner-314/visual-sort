@@ -1,4 +1,4 @@
-import { SwapAnimation } from "../types";
+import { SwapAnimation } from "../../types/types";
 
 export function bubbleSort(array: Array<number>) {
   let animations: Array<SwapAnimation> = [] as Array<SwapAnimation>;

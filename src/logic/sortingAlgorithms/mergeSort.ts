@@ -1,4 +1,4 @@
-import { IndexValue, SwapAnimation } from "../types";
+import { IndexValue, SwapAnimation } from "../../types/types";
 
 export function mergeSort(array: Array<number>) {
   let animations: Array<SwapAnimation> = [] as Array<SwapAnimation>;

@@ -1,4 +1,4 @@
-import { SwapAnimation } from "../types";
+import { SwapAnimation } from "../../types/types";
 
 export function quickSort(array: number[]) {
   let animations: SwapAnimation[] = [] as SwapAnimation[];

@@ -1,4 +1,4 @@
-import { SwapAnimation } from "../types";
+import { SwapAnimation } from "../../types/types";
 
 export function heapSort(array: number[]) {
   let animations = [] as SwapAnimation[];
@@ -10,7 +10,6 @@ function heapSortHelper(array: number[], animations: SwapAnimation[]) {
   let heapSize = array.length;
   //build the heap (rearrange)
   for (let i = Math.floor(heapSize / 2 - 1); i >= 0; i--) {
-    console.log(i);
     maxHeapify(array, heapSize, i, animations);
   }
   for (let i = heapSize - 1; i > 0; i--) {

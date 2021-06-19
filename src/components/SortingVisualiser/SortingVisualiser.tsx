@@ -1,9 +1,9 @@
 import React from "react";
-import { bubbleSort } from "../sortingAlgorithms/bubbleSort";
-import { heapSort } from "../sortingAlgorithms/heapSort";
-import { mergeSort } from "../sortingAlgorithms/mergeSort";
-import { quickSort } from "../sortingAlgorithms/quickSort";
-import { SwapAnimation } from "../types";
+import { bubbleSort } from "../../logic/sortingAlgorithms/bubbleSort";
+import { heapSort } from "../../logic/sortingAlgorithms/heapSort";
+import { mergeSort } from "../../logic/sortingAlgorithms/mergeSort";
+import { quickSort } from "../../logic/sortingAlgorithms/quickSort";
+import { SwapAnimation } from "../../types/types";
 import "./SortingVisualiser.css";
 
 interface MyState {
@@ -62,6 +62,8 @@ export class SortingVisualiser extends React.Component<{}, MyState> {
 
   animate(animations: Array<SwapAnimation>) {
     let x;
+    let time = animations.length;
+    console.log(time);
     let arrayBars: HTMLCollectionOf<HTMLElement> =
       document.getElementsByClassName(
         "array-bar"
